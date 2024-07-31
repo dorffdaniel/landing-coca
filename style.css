@@ -1,0 +1,237 @@
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background:#121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e51e2a;
+    clip-path: circle(50% at bottom right);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    position: relative;
+    max-width: 15px;
+}
+header .navagation ul{
+    display: flex;
+    position: relative;
+}
+
+.navagation li a{
+    color: aliceblue;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 100px;
+    border-bottom: transparent #e51e2a;
+    padding-bottom: 6px;
+    padding: 12px;
+    border-radius: 45px;
+}
+
+.navagation li a:hover{
+    transition: 0.5s ease-in;
+    border-bottom: 3px solid #ff0303;
+    transform: translateY(-8px);
+}
+
+
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.container .text h2{
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+
+.container .text h2 span{
+    font-size: 3.5em;
+    color: #e51e2a;
+}
+
+.container .text p{
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+.container .text a{
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background:#e51e2a;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.4s ease-in-out;
+}
+
+.container .text a:hover{
+    transform: translateY(-15px);
+    color: #121212;
+}
+
+.icon{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon li a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #222;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.icon li a:hover{
+    background: #e51e2a;
+    transform: translateY(-10px);
+}
+
+.icon li a img{
+    transform: scale(0.7);
+    filter: invert(1);
+}
+
+.boximg{
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
+
+}
+
+.boximg img{
+    width: 200px;
+}
+
+.boximg .img1{
+   transform: rotate(-15deg);
+}
+
+.boximg .img2{
+    transform: rotate(5deg);
+}
+
+.boximg .img3{
+    transform: rotate(15deg);
+}
+
+.boximg .img4{
+    transform: rotate(-15deg);
+}
+
+@media(min-width: 320px) and (max-width: 480px){
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img{
+        max-width: 100px;
+        position: absolute;
+        position: relative;
+        right: 20px;
+    }
+
+    .navagation ul{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 30px;
+    }
+
+    .navagation li a{
+        color: #e51e2a;
+        font-size: 17px;
+    }
+
+    .container{
+        margin-top: 200px;
+    }
+    .container .text h2{
+        font-size: 18px;
+        width: 100vw;
+    }
+
+    .container .text h2 span{
+        font-size: 24px;
+    }
+
+    .container .text p{
+        font-size: 17px;
+        width: 200px;
+    }
+
+    .container .text a{
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .boximg img{
+        width: 60px;
+    }
+
+}
